@@ -1,0 +1,24 @@
+<ul class="pagination" role="menubar" aria-label="Pagination"
+    ng-show="pagination.numbers.length">
+    <li class="arrow unavailable" aria-disabled="true" ng-show="query.offset">
+        <label>&laquo; Prev
+            <input  type="radio" class="hidden"  ng-model="query.offset"
+                    ng-value="query.offset-query.limit">
+        </label>
+    </li>
+    <li class="" ng-repeat="item in pagination.numbers">
+        <label>
+            <input type="radio" class="hidden" ng-model="query.offset"
+                   ng-value="item.offset" />
+            <div>{{$index+1}}</div>
+        </label>
+    </li>
+    <li class="arrow"
+        ng-hide="query.offset==pagination.numbers[pagination.numbers.length-1].offset">
+        <label>
+            Next &raquo;
+            <input  type="radio" class="hidden"  ng-model="query.offset"
+                    ng-value="query.offset+query.limit">
+        </label>
+    </li>
+</ul>

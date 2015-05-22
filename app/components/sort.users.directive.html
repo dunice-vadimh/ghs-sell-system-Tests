@@ -1,0 +1,80 @@
+<div class="sort">
+    <p><b>Sort by: </b>
+        <label ng-class="{active:(query.orderBy=='date'||query.orderBy=='-date')}"
+               ng-hide="query.orderBy=='date'">
+            Date
+            <input class="hidden" value="date" type="radio" ng-model="query.orderBy">
+        </label>
+        <label ng-class="{active:(query.orderBy=='date'||query.orderBy=='-date')}"
+               ng-show="query.orderBy=='date'">
+            Date
+            <input  class="hidden" value="-date" type="radio" ng-model="query.orderBy">
+        </label>
+
+        <label ng-class="{active:(query.orderBy=='id'||query.orderBy=='-id')}"
+               ng-hide="query.orderBy=='id'">
+            ID
+            <input class="hidden" value="id" type="radio" ng-model="query.orderBy">
+        </label>
+        <label ng-class="{active:(query.orderBy=='id'||query.orderBy=='-id')}"
+               ng-show="query.orderBy=='id'">
+            ID
+            <input class="hidden" value="-id" type="radio" ng-model="query.orderBy">
+        </label>
+
+        <label ng-class="{active:(query.orderBy=='system'||query.orderBy=='-system')}"
+               ng-hide="query.orderBy=='system'">
+            Exchange System
+            <input class="hidden" value="system" type="radio" ng-model="query.orderBy">
+        </label>
+        <label ng-class="{active:(query.orderBy=='system'||query.orderBy=='-system')}"
+               ng-show="query.orderBy=='system'">
+            Exchange System
+            <input class="hidden" value="-system" type="radio" ng-model="query.orderBy">
+        </label>
+
+        <label ng-class="{active:(query.orderBy=='user'||query.orderBy=='-userType')}"
+               ng-hide="query.orderBy=='userType'">
+            User Type
+            <input class="hidden" value="user" type="radio" ng-model="query.orderBy">
+        </label>
+        <label ng-class="{active:(query.orderBy=='user'||query.orderBy=='-userType')}"
+               ng-show="query.orderBy=='userType'">
+            User Type
+            <input class="hidden" value="-user" type="radio" ng-model="query.orderBy">
+        </label>
+
+        <label ng-class="{active:(query.orderBy=='ghs'||query.orderBy=='-ghs')}"
+               ng-hide="query.orderBy=='ghs'">
+            GHS Amount
+            <input class="hidden" value="ghs" type="radio" ng-model="query.orderBy">
+        </label>
+        <label ng-class="{active:(query.orderBy=='ghs'||query.orderBy=='-ghs')}"
+               ng-show="query.orderBy=='ghs'">
+            GHS Amount
+            <input class="hidden" value="-ghs" type="radio" ng-model="query.orderBy">
+        </label>
+
+        <label ng-class="{active:(query.orderBy=='mining'||query.orderBy=='-mining')}"
+               ng-hide="query.orderBy=='mining'">
+            Mining Earning
+            <input class="hidden" value="mining" type="radio" ng-model="query.orderBy">
+        </label>
+        <label ng-class="{active:(query.orderBy=='mining'||query.orderBy=='-mining')}"
+               ng-show="query.orderBy=='mining'">
+            Mining Earning
+            <input class="hidden" value="-mining" type="radio" ng-model="query.orderBy">
+        </label>
+
+        <label ng-class="{active:(query.orderBy=='orders'||query.orderBy=='-orders')}"
+               ng-hide="query.orderBy=='orders'">
+            Orders Amount
+            <input class="hidden" value="orders" type="radio" ng-model="query.orderBy">
+        </label>
+        <label ng-class="{active:(query.orderBy=='orders'||query.orderBy=='-orders')}"
+               ng-show="query.orderBy=='orders'">
+            Orders Amount
+            <input class="hidden" value="-orders" type="radio" ng-model="query.orderBy">
+        </label>
+    </p>
+</div>
